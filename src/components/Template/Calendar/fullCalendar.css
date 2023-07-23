@@ -1,0 +1,113 @@
+.fc-prev-button.fc-button.fc-button-primary {
+    background-color: var(--midnight-blue);
+    box-shadow: none !important;
+}
+
+.fc-next-button.fc-button.fc-button-primary {
+    background-color: var(--midnight-blue);
+    box-shadow: none !important;
+}
+
+.fc-today-button.fc-button.fc-button-primary {
+    background-color: var(--midnight-blue);
+    opacity: 1;
+}
+
+.fc-dayGridMonth-button.fc-button.fc-button-primary {
+    background-color: #ffffff;
+    color: #666666;
+    border: 1px solid #D9d9d9;
+}
+
+.fc-dayGridMonth-button.fc-button.fc-button-primary.fc-button-active {
+    background-color: var(--midnight-blue);
+    box-shadow: none !important;
+}
+
+.fc-timeGridWeek-button.fc-button.fc-button-primary {
+    background-color: #ffffff;
+    color: #666666;
+    border: 1px solid #D9d9d9;
+}
+
+.fc-timeGridWeek-button.fc-button.fc-button-primary.fc-button-active {
+    background-color: var(--midnight-blue);
+    box-shadow: none !important;
+}
+
+.fc-timeGridDay-button.fc-button.fc-button-primary {
+    background-color: #ffffff;
+    color: #666666;
+    border: 1px solid #D9d9d9;
+}
+
+.fc-timeGridDay-button.fc-button.fc-button-primary.fc-button-active {
+    background-color: var(--midnight-blue);
+    box-shadow: none !important;
+}
+
+
+.fc-toolbar-chunk {
+    display: flex;
+    height: 40px;
+    line-height: normal;
+    vertical-align: middle;
+}
+
+.fc-toolbar-title {
+    width: 200px;
+    line-height: normal;
+    letter-spacing: 0;
+    padding-top: 6px;
+}
+
+.fc .fc-toolbar-title {
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-xxl2);
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0;
+    line-height: normal;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.fc .fc-toolbar.fc-header-toolbar {
+    margin-bottom: 10px;
+}
+
+
+.fullPlanning {
+    font-family: poppins;
+}
+
+.fc-timegrid-slot {
+    height: auto !important;
+  }
+
+  .fc-event {
+    height: auto !important;
+  }
+
+.fc .fc-daygrid-day-events {
+    display: none;
+}
+
+.fc .fc-timegrid-axis-cushion {
+    display: none;
+    border: none !important;
+}
+
+.fc .fc-timegrid-divider {
+    padding: 0 !important;
+}
+
+b {
+    font-weight: 600;
+}
+
+.event {
+    padding-top: 2px;
+    font-size: 13px;
+    padding-left: 2px;
+}

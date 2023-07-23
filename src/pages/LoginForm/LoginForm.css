@@ -1,0 +1,929 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Inter:600|Poppins:500,400,700,600");
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input:focus {
+  outline: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.loginform-reponsivescreen {
+  align-items: center;
+  background-position: 50% 50%;
+  background-size: cover;
+  border: 1px none;
+  display: flex;
+  height: 100vh;
+  min-width: 1200px;
+  padding: 19px 40px 19px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.colonne-1 {
+  align-items: flex-start;
+  flex: 1;
+  flex-direction: column;
+  height: 840px;
+  margin-bottom: -17.00px;
+  margin-top: -80px;
+  opacity: 0;
+  position: relative;
+  margin-left: 25px;
+}
+
+.colonne-1.animate-enter {
+  animation: animate-enter-frames 0.20s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+}
+
+.logo-lfd {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  gap: 10px;
+  height: 164px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 52px 0px 52px 50px;
+  position: relative;
+  width: 653px;
+}
+
+.logo_-clinea {
+  height: 80px;
+  min-width: 191px;
+  position: relative;
+  padding-left: 10px;
+}
+
+.colonne-1-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  height: 676px;
+  padding: 22px 50px;
+  position: relative;
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.h1lp {
+  align-self: stretch;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+}
+
+.chavan-picture {
+  align-self: stretch;
+  height: 330px;
+  min-width: 548.5px;
+  object-fit: cover;
+  position: relative;
+  border-radius: 20px;
+}
+
+.colonne-1-item {
+  align-self: stretch;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+}
+
+.colonne2-lf {
+  align-items: center;
+  flex: 1;
+  flex-direction: column;
+  gap: 10px;
+  height: 844px;
+  justify-content: center;
+  margin-bottom: -19.00px;
+  margin-top: -19.00px;
+  opacity: 0;
+  padding: 187px 40px 157px 36px;
+  position: relative;
+}
+
+.colonne2-lf.animate-enter1 {
+  animation: animate-enter1-frames 0.20s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+}
+
+.login-box {
+  align-items: center;
+  align-self: stretch;
+  background-color: var(--white);
+  border: 1px solid;
+  border-color: #d3d3d3cc;
+  border-radius: 50px;
+  box-shadow: 5px 5px 40px 20px #0000000d;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 660px;
+  justify-content: center;
+  margin-top: -75.00px;
+  overflow: hidden;
+  padding: 43px 76px;
+  position: relative;
+  padding-top: 70px;
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  width: 275px;
+  color: var(--black);
+    font-family: var(--font-family-poppins);
+    font-size: 40px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.vous-navez-pas-encore-de-compte {
+  align-self: stretch;
+  color: var(--black);
+  font-weight: 500;
+  height: 36px;
+  line-height: normal;
+  position: relative;
+  text-align: center;
+}
+
+.premire-connexion {
+  align-self: stretch;
+  height: 18px;
+  letter-spacing: 0;
+  line-height: 18px;
+  position: relative;
+  text-align: center;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+
+.premire-connexion:hover {
+cursor: pointer;
+}
+
+.votre-identifiant {
+  align-self: stretch;
+  color: var(--black);
+  font-weight: 500;
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  white-space: nowrap;
+}
+
+.text-input-mail {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--white);
+  border: 1px solid;
+  border-color: var(--mountain-mist);
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  padding: 20px 22px 20px 22px;
+  position: relative;
+  margin-bottom:-20px
+}
+
+.votre-mail {
+  background-color: transparent;
+  border: 0;
+  height: 30px;
+  letter-spacing: 0;
+  line-height: 15px;
+  margin-top: -1.00px;
+  width: 100%;
+  padding: 0%;
+  position: relative;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.votre-mail::placeholder,
+.saisir-votre-mot-de-passe::placeholder {
+  color: #99999999;
+  line-height: 16px;
+  width: auto;
+}
+
+
+.votre-mot-de-passe {
+  align-self: stretch;
+  color: var(--black);
+  font-weight: 500;
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  white-space: nowrap;
+}
+
+.text-input-password {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--white);
+  border: 1px solid;
+  border-color: var(--mountain-mist);
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  padding: 20px 22px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.saisir-votre-mot-de-passe {
+  background-color: transparent;
+  border: 0;
+  height: 30px;
+  letter-spacing: 0;
+  line-height: 15px;
+  margin-top: -1.00px;
+  min-width: 376px;
+  padding: 0;
+  position: relative;
+  white-space: nowrap;
+  font-size: 16px;
+}
+
+.text-input-mail,
+.text-input-password,
+.frame-2 {
+  height: 62px; /* ou toute autre hauteur que vous souhaitez */
+}
+
+.votre-identifiant,
+.votre-mot-de-passe {
+  padding-top: 35px; /* Ajustez cette valeur en fonction de vos besoins */
+}
+
+.frame-2 {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--midnight-blue);
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.frame-2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.se-connecter {
+  align-self: stretch;
+  flex: 1;
+  letter-spacing: 0;
+  line-height: 19.5px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+}
+
+.mot-de-passe-perdu {
+  align-self: stretch;
+  height: 20px;
+  letter-spacing: 0;
+  line-height: 18px;
+  position: relative;
+  text-align: center;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+
+.mot-de-passe-perdu:hover {
+  cursor: pointer;
+}
+
+.login-error {
+  color: red;
+  font-weight: 700;
+}
+
+
+@keyframes animate-enter1-frames {
+  from{opacity: 0;
+}
+to{opacity: 1;
+}
+}
+
+@keyframes animate-enter-frames {
+  from{opacity: 0;
+}
+to{opacity: 1;
+}
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .loginform-reponsive {
+    align-items: flex-start;
+    background-position: 50% 50%;
+    background-size: cover;
+    border: 1px none;
+    display: flex;
+    flex-direction: column;
+    height: 1674px;
+    justify-content: center;
+    min-width: 600px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .colonne-1 {
+    align-items: flex-start;
+    align-self: stretch;
+    flex-direction: column;
+    height: 840px;
+    margin-top: -5.00px;
+    opacity: 0;
+    position: relative;
+  }
+  
+  .colonne-1.animate-enter {
+    animation: animate-enter-frames 0.20s ease-in-out 0.00s 1 normal forwards;
+    opacity: 0;
+  }
+  
+  .logo-lfd {
+    align-items: flex-start;
+    background-color: var(--white);
+    display: flex;
+    gap: 10px;
+    height: 164px;
+    margin-right: -53.00px;
+    padding: 52px 0px 52px 50px;
+    position: relative;
+    width: 653px;
+  }
+  
+  .logo_-clinea {
+    height: 60px;
+    min-width: 191px;
+    position: relative;
+  }
+  
+  .colonne-1-1 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    height: 676px;
+    padding: 22px 50px;
+    position: relative;
+  }
+  
+  .h1-lp {
+    align-self: stretch;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+  }
+  
+  .chavan-picture {
+    align-self: stretch;
+    height: 330px;
+    min-width: 500px;
+    object-fit: cover;
+    position: relative;
+  }
+  
+  .colonne-1-item {
+    align-self: stretch;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+  }
+  
+  .colonne2-lf {
+    align-items: center;
+    align-self: stretch;
+    flex-direction: column;
+    gap: 10px;
+    height: 844px;
+    justify-content: center;
+    opacity: 0;
+    padding: 0px 40px 157px 36px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .colonne2-lf.animate-enter1 {
+    animation: animate-enter1-frames 0.20s ease-in-out 0.00s 1 normal forwards;
+    opacity: 0;
+  }
+  
+  .login-box {
+    align-items: center;
+    align-self: stretch;
+    background-color: var(--white);
+    border: 1px solid;
+    border-color: #d3d3d3cc;
+    border-radius: 50px;
+    box-shadow: 5px 5px 40px 20px #0000000d;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 590px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 43px 76px;
+    position: relative;
+    margin-top: 12em;
+  }
+  
+  .title {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: center;
+    width: 275px;
+    color: var(--black);
+    font-family: var(--font-family-poppins);
+    font-size: 40px;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .vous-navez-pas-encore-de-compte {
+    align-self: stretch;
+    color: var(--black);
+    font-weight: 500;
+    height: 36px;
+    line-height: normal;
+    position: relative;
+    text-align: center;
+  }
+  
+  .premire-connexion {
+    align-self: stretch;
+    height: 18px;
+    letter-spacing: 0;
+    line-height: 18px;
+    position: relative;
+    text-align: center;
+    text-decoration: underline;
+    white-space: nowrap;
+  }
+  
+  .votre-identifiant {
+    align-self: stretch;
+    color: var(--black);
+    font-weight: 500;
+    height: 18px;
+    line-height: 18px;
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  .text-input-mail {
+    align-items: flex-start;
+    align-self: stretch;
+    background-color: var(--white);
+    border: 1px solid;
+    border-color: var(--mountain-mist);
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    padding: 20px 22px;
+    position: relative;
+  }
+  
+  .votre-mail {
+    background-color: transparent;
+    border: 0;
+    height: 15px;
+    letter-spacing: 0;
+    line-height: 15px;
+    margin-right: -48.00px;
+    margin-top: -1.00px;
+    min-width: 376px;
+    padding: 0;
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  .votre-mail::placeholder,
+  .saisir-votre-mot-de-passe::placeholder {
+    color: #99999999;
+  }
+  
+  .votre-mot-de-passe {
+    align-self: stretch;
+    color: var(--black);
+    font-weight: 500;
+    height: 20px;
+    line-height: 18px;
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  .text-input-password {
+    align-items: flex-start;
+    align-self: stretch;
+    background-color: var(--white);
+    border: 1px solid;
+    border-color: var(--mountain-mist);
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    padding: 20px 27px;
+    position: relative;
+  }
+  
+  .saisir-votre-mot-de-passe {
+    background-color: transparent;
+    border: 0;
+    height: 15px;
+    letter-spacing: 0;
+    line-height: 15px;
+    margin-right: -51.00px;
+    margin-top: -1.00px;
+    min-width: 369px;
+    padding: 0;
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  .frame-2 {
+    align-items: flex-start;
+    align-self: stretch;
+    background-color: var(--midnight-blue);
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    height: 62px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .se-connecter {
+    align-self: stretch;
+    flex: 1;
+    letter-spacing: 0;
+    line-height: 19.5px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: center;
+
+  }
+  
+  .mot-de-passe-perdu {
+    align-self: stretch;
+    height: 20px;
+    letter-spacing: 0;
+    line-height: 18px;
+    position: relative;
+    text-align: center;
+    text-decoration: underline;
+    white-space: nowrap;
+  }
+  
+  @keyframes animate-enter1-frames {
+    from{opacity: 0;
+  }
+  to{opacity: 1;
+  }
+  }
+  
+  @keyframes animate-enter-frames {
+    from{opacity: 0;
+  }
+  to{opacity: 1;
+  }
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .loginform-reponsivescreen {
+    align-items: flex-start;
+    background-position: 50% 50%;
+    background-size: cover;
+    border: 1px none;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    min-width: 300px;
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    padding: 0%;
+  }
+  
+  .colonne-1 {
+    align-items: flex-start;
+    align-self: stretch;
+    flex-direction: column;
+    height: 840px;
+    margin-top: -5.00px;
+    opacity: 0;
+    padding: 3px 0px;
+    position: relative;
+    margin-left: 0px;
+  }
+  
+  .colonne-1.animate-enter {
+    animation: animate-enter-frames 0.20s ease-in-out 0.00s 1 normal forwards;
+    opacity: 0;
+  }
+  
+  .logo-lfd {
+    align-items: flex-start;
+    align-self: stretch;
+    background-color: var(--white);
+    gap: 10px;
+    height: 164px;
+    padding: 0%;
+    min-width: 300px;
+    max-width: 600px;
+    width: auto;
+  }
+  
+  .logo_-clinea {
+    height: 60px;
+    min-width: 191px;
+    display: flex;
+    margin: auto;
+    position: absolute;
+  }
+  
+  .colonne-1-1 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: -46px;
+    padding-left: 35px;
+    padding-right: 35px;
+    position: relative;
+    width: auto;
+  }
+  
+  .h1-lp {
+    align-self: stretch;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .chavan-picture {
+    min-height: 330px;
+    min-width: 250px;
+  }
+  
+  .colonne-1-item {
+    align-self: stretch;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    text-align: center;
+  }
+  
+  .colonne2-lf {
+    align-items: center;
+    align-self: stretch;
+    flex-direction: column;
+    gap: 10px;
+    height: 844px;
+    justify-content: center;
+    opacity: 0;
+    padding: 0px 40px 157px 36px;
+    position: relative;
+  }
+  
+  .colonne2-lf.animate-enter1 {
+    animation: animate-enter1-frames 0.20s ease-in-out 0.00s 1 normal forwards;
+    opacity: 0;
+  }
+  
+  .login-box {
+    align-items: center;
+    align-self: stretch;
+    background-color: var(--white);
+    border: 1px solid;
+    border-color: #d3d3d3cc;
+    border-radius: 50px;
+    box-shadow: 5px 5px 40px 20px #0000000d;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 500px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 33px 20px 43px;
+    position: relative;
+    max-width: 600px;
+  }
+  
+  .frame-3 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+  }
+  
+  .title {
+    color: var(--black);
+    font-family: var(--font-family-poppins);
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .vous-navez-pas-encore-de-compte {
+    align-self: stretch;
+    color: var(--black);
+    font-weight: 500;
+    height: 36px;
+    line-height: normal;
+    position: relative;
+    text-align: center;
+  }
+  
+  .premire-connexion {
+    align-self: stretch;
+    height: 18px;
+    letter-spacing: 0;
+    line-height: 18px;
+    position: relative;
+    text-align: center;
+    text-decoration: underline;
+    white-space: nowrap;
+  }
+  
+  .votre-identifiant {
+    align-self: stretch;
+    color: var(--black);
+    font-weight: 500;
+    height: 18px;
+    line-height: 18px;
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  .text-input-mail {
+    align-items: flex-start;
+    align-self: stretch;
+    background-color: var(--white);
+    border: 1px solid;
+    border-color: var(--mountain-mist);
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    padding: 22px 17px;
+    position: relative;
+  }
+  
+  .votre-mail {
+    background-color: transparent;
+    border: 0;
+    letter-spacing: 0;
+    height: 30px;
+    line-height: 18px;
+    margin-right: -7.00px;
+    margin-top: -1.00px;
+    min-width: 313.5px;
+    padding: 0;
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  .votre-mail::placeholder,
+  .saisir-votre-mot-de-passe::placeholder {
+    color: #99999999;
+  }
+  
+  .votre-mot-de-passe {
+    align-self: stretch;
+    color: var(--black);
+    font-weight: 500;
+    height: 20px;
+    line-height: 18px;
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  .text-input-password {
+    align-items: flex-start;
+    align-self: stretch;
+    background-color: var(--white);
+    border: 1px solid;
+    border-color: var(--mountain-mist);
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    padding: 25px 17px;
+    position: relative;
+  }
+  
+  .saisir-votre-mot-de-passe {
+    background-color: transparent;
+    border: 0;
+    height: 15px;
+    width: 90%;
+    letter-spacing: 0;
+    line-height: 15px;
+    margin-right: -5.00px;
+    margin-top: -1.00px;
+    min-width: 155px;
+    padding: 0;
+    position: relative;
+    white-space: nowrap;
+    box-sizing: border-box;
+  }
+  
+  .frame-2 {
+    align-items: flex-start;
+    align-self: stretch;
+    background-color: var(--midnight-blue);
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    height: 47px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .se-connecter {
+    align-self: stretch;
+    flex: 1;
+    letter-spacing: 0;
+    line-height: 19.5px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .mot-de-passe-perdu {
+    align-self: stretch;
+    height: 20px;
+    letter-spacing: 0;
+    line-height: 18px;
+    position: relative;
+    text-align: center;
+    text-decoration: underline;
+    white-space: nowrap;
+  }
+  
+  @keyframes animate-enter-frames {
+    from{opacity: 0;
+  }
+  to{opacity: 1;
+  }
+  }
+  
+  @keyframes animate-enter1-frames {
+    from{opacity: 0;
+  }
+  to{opacity: 1;
+  }
+  }   
+}

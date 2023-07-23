@@ -1,0 +1,577 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,600");
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input:focus {
+  outline: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.psychiatredashboard {
+  background-color: var(--alice-blue);
+  border: 1px none;
+  height: 917px;
+  position: relative;
+  width: 100%;
+}
+
+
+
+.overlap-group1 {
+  height: 917px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 109px;
+}
+
+.btn-extnd {
+  align-items: flex-end;
+  background-color: var(--jordy-blue);
+  border-radius: 31px/36px;
+  display: flex;
+  height: 72px;
+  justify-content: flex-end;
+  left: 52px;
+  min-width: 62px;
+  padding: 30.0px 12.6px;
+  position: absolute;
+  top: 125px;
+  z-index: 1;
+}
+
+.sidebar-extended .btn-extnd {
+  left: 232px;
+}
+
+.btn-extnd:hover {
+  filter : brightness(96%);
+  cursor: pointer;
+}
+
+.dashiconsarrow-down-alt2 {
+  height: 8px;
+  width: 5px;
+  transform: rotate(180deg);
+  margin-right: -2px;
+}
+
+.sidebar-extended .dashiconsarrow-down-alt2 {
+  transform: rotate(0deg);
+  margin-right: 0px;
+}
+
+.dashiconsarrow-down-alt2:hover {
+  height: 12px;
+  width: 9px;
+  transform: rotate(180deg);
+  margin-right: -5px;
+  margin-bottom: -2px;
+}
+
+.sidebar-extended .dashiconsarrow-down-alt2:hover {
+  transform: rotate(0deg);
+  margin-right: 0px;
+}
+.container-main {
+  position: absolute;
+  top: 88px; /* Hauteur de votre header */
+  left: 90px; /* Largeur de votre sidebar */
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  transition: left 0.3s ease;
+  background-color: #F1F8FF;
+  padding-bottom: 50px;
+}
+
+.sidebar-extended .container-main {
+  left: 268px; /* Ajustez cette valeur en fonction de la largeur de votre sidebar étendue */
+}
+
+.bg {
+  background-color: var(--white);
+  border-radius: 0px 79px 0px 0px;
+  box-shadow: 0px 0px 4px #00000029;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 90px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sidebar-extended .bg {
+  width: 268px;
+  z-index: 3;
+  justify-content: space-between;
+}
+
+.columnIcon {
+  width: 53px;
+  height: 742px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 0px;
+  margin-top: 145px;
+  margin-left: -10px;
+  position: static;
+}
+
+.sidebar-extended .columnIcon {
+margin-left: -190px;
+margin-top: 56px;
+
+}
+
+.columnIcon > *:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.planning {
+  height: 34px;
+  width: 42px;
+  display: flex;
+}
+
+.logo-calendar-select {
+  align-items: flex-start;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  display: flex;
+  height: 34px;
+  min-width: 42px;
+  padding: 6px 11px;
+}
+
+.calendar {
+  height: 23px;
+  object-fit: cover;
+  width: 22px;
+}
+
+.icon-file {
+  display: flex;
+  width: 17px;
+  height: 21px;  
+}
+
+.sidebar-extended .icon-file {
+  margin-left: 65px;
+}
+
+.activits {
+  margin-left: 6px;
+}
+
+.logo-activites {
+  display: flex;
+  height: 30px;
+  width: 30px;
+  margin-left: 5px;
+  stroke: #CCCBED;
+}
+
+.sidebar-extended .logo-activites2 {
+  margin-left: 50px;
+}
+
+.logo-clinea {
+  height: 6%;
+  left: 14px;
+  object-fit: cover;
+  position: absolute;
+  top: 44px;
+  width: auto;
+}
+
+
+.logo-clinea2 {
+  width: 119px;
+  height: 48px;
+  margin-top: 45px;
+  margin-left: 44px;
+}
+
+.logo-buble {
+  background-color: var(--white);
+  border-radius: 23px;
+  display: flex;
+  height: 46px;
+  margin-right: 30px;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 21px;
+  width: 46px;
+}
+
+.x6logo-parent {
+  height: 46px;
+  margin-left: 3px;
+  width: 40px;
+}
+
+.global-search-bar-psy {
+  display: none;
+  /*align-items: center;
+  background-color: var(--ocean-blue-pearl-2);
+  border-radius: 4px;
+  display: flex;
+  gap: 26px;
+  left: 136px;
+  overflow: hidden;
+  padding: 8px 14px;
+  position: absolute;
+  top: 23px;
+  width: fit-content;
+*/}
+
+
+
+.icon-search {
+  display: none;
+  /*height: 21px;
+  min-width: 21px;
+  position: relative;
+*/}
+
+.bottomIcon {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: flex-start;
+  width: 53px;
+  height: 100px;
+  gap: 15px;
+  margin-bottom: 40px;
+  margin-left: -10px;
+}
+
+.sidebar-extended .bottomIcon {
+  margin-left: -90px;
+  margin-top: 52px;
+}
+
+
+.parametres-icon {
+  height: 23px;
+  left: 42px;
+  position: flex-end;
+  top: 807px;
+  width: 19px;
+
+}
+
+.bottomIcon2 {
+  height: 30px;
+  width: 25px
+}
+
+.deconnexion-icone {
+  height: 22px;
+  left: 15px;
+  position: flex-end;
+  top: 859px;
+  width: 22px;
+  margin-top: 5px;
+}
+
+.notificationContainer {
+  justify-content: center;
+  padding-bottom: 34px;
+}
+
+.notification-icon {
+  display: flex;
+  height: 36px;
+  margin-right: 90px;
+  overflow: hidden;
+  position: absolute;
+  align-items: center;
+  right: 0;
+  width: 36px;
+}
+
+
+.rechercher-un-patien {
+  background-color: transparent;
+  border: 0;
+  height: 21px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  min-width: 446px;
+  padding: 0;
+  position: relative;
+}
+
+.rechercher-un-patien::placeholder,
+.rechercher-un-patient-ou-une-date::placeholder {
+  color: #b5b9bc99;
+}
+
+
+.head {
+  align-items: center;
+  background-color: var(--midnight-blue);
+  display: flex;
+  gap: 2px;
+  height: 88px;
+  justify-content: flex-end;
+  left: 0;
+  width: 100vw;
+  padding: 24px 148.3px;
+  position: absolute;
+  top: 0;
+}
+
+.sidebar-extended .head {
+  left: 200px;
+  width: calc(100vw - 200px);
+}
+
+.overlap-group {
+  align-self: flex-end;
+  height: 39px;
+  width: 128px;
+  background-color: var(--midnightblue);
+  border : none;
+  position:relative;  
+  display: flex;
+}
+
+.prnom-nom {
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  width: 128px;
+}
+
+.psychiatre {
+  left: 3px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 18px;
+  width: 88px;
+}
+
+.rectangle-3256 {
+  display: flex;
+  background-color: var(--royal-blue);
+  height: 38px;
+  width: 3px;
+  position:absolute;
+  margin-right: 0px;
+}
+
+.select-period {
+  align-items: center;
+  background-color: var(--white);
+  border: 0.5px solid;
+  border-color: var(--star-dust);
+  border-radius: 4px;
+  display: flex;
+  height: 30px;
+  left: 955px;
+  min-width: 179px;
+  padding: 0 10.5px;
+  position: absolute;
+  top: 252px;
+}
+
+.jour {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-bottom: 2.0px;
+  min-height: 21px;
+  min-width: 31px;
+}
+
+.overlap-group2 {
+  align-items: flex-start;
+  background-color: var(--midnight-blue);
+  display: flex;
+  height: 30px;
+  margin-left: 10px;
+  min-width: 76px;
+  padding: 4px 6px;
+}
+
+.semaine {
+  letter-spacing: 0;
+  line-height: normal;
+  min-height: 21px;
+}
+
+.mois {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-bottom: 2.0px;
+  margin-left: 8px;
+  min-height: 21px;
+  min-width: 32px;
+}
+
+.iconfile {
+  display: flex;
+}
+
+.patients {
+  display: flex;
+  padding-left: 12px;
+  padding-top: 5px;
+}
+
+
+.sidebar-extended .logout {
+  display: flex;
+  cursor: pointer;
+  transition: stroke 0.3s ease;
+  fill: #CCCBED;
+  color: #CCCBED;
+}
+
+.sidebar-extended .settings {
+  display: flex;
+  cursor: pointer;
+  transition: stroke 0.3s ease;
+  fill: #CCCBED;
+  color: #CCCBED;
+}
+
+.sidebar-collapsed .deconnexion-icone,
+.sidebar-collapsed .parametres-icon {
+  stroke: #CCCBED;
+}
+
+.sidebar-collapsed .deconnexion-icone:hover,
+.sidebar-collapsed .parametres-icon:hover {
+  stroke:midnightblue;
+  cursor: pointer;
+}
+
+.sidebar-collapsed .parametres-icon {
+  margin-left: -5px;
+}
+
+.sidebar-extended .activites {
+  display: flex;
+  margin-left: 16px;
+}
+
+.sidebar-collapsed .calendar.active,
+.sidebar-collapsed .icon-file.active,
+.sidebar-collapsed .logo-activities.active,
+.sidebar-collapsed .parametres-icon.active {
+  stroke: midnightblue;
+}
+
+.planningTxt {
+  display: flex;
+  padding-top: 4px;
+}
+
+.sidebar-extended .parametres-icon2 {
+  margin-left: -15px;
+}
+
+.sidebar-extended .paramtres {
+  margin-left: 8px;
+}
+
+.sidebar-extended .dconnexion {
+  margin-top: -10px;
+}
+
+.planning,
+.iconfile,
+.logo-activites,
+.activites,
+.logout,
+.settings {
+  cursor: pointer;
+  transition: stroke 0.3s ease;
+  stroke: #CCCBED;
+  color: #CCCBED;
+}
+
+.planning:hover,
+.iconfile:hover,
+.activites:hover,
+.logout:hover,
+.logo-activites:hover,
+.settings:hover {
+  stroke: var(--midnight-blue);
+  color: #153D7C;
+}
+
+.planning.active,
+.iconfile.active,
+.activites.active,
+.logout.active,
+.logo-activites.active,
+.settings.active {
+  stroke: var(--midnight-blue);
+  color: #153D7C;
+}
+
+.planning:hover,
+.iconfile:hover,
+.activites:hover,
+.logout:hover,
+.settings:hover {
+  fill: var(--midnight-blue);
+  color: #153D7C;
+}
+.calendarForDesign { 
+  height: 500; 
+  border-radius: '10px';
+  overflow: 'hidden';
+  border: '1px solid #9D9D9D';
+  background-color: #FFFFFF;
+}
+
+.calendar {
+  background-color: #FFFFFF;
+}
+
+.rbc-toolbar {
+  display: none;
+}
+
+

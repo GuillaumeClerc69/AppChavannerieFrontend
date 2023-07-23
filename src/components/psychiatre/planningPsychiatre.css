@@ -1,0 +1,795 @@
+.titlePsychiatre {
+    color: var(--midnight-blue);
+    font-family: var(--font-family-poppins);
+    font-size: 28px;
+    font-weight: 600;
+    left: 60px;
+    letter-spacing: 0;
+    line-height: normal;
+    top: 55px;
+    width: 127px;
+  }
+  
+.inputHour1 {
+  margin-right: -118px;
+}
+
+  .change-period {
+    background-color: var(--midnight-blue);
+    border-radius: 4px;
+    display: flex;
+    height: 30px;
+    left: 136px;
+    top: 253px;
+    width: 60px;
+  }
+  
+  .arrow-left {
+    height: 20px;
+    margin-left: 1px;
+    margin-top: 3px;
+    width: 45px;
+  }
+  
+  .arrow-right {
+    height: 20px;
+    margin-left: 3px;
+    margin-top: 5px;
+    width: 45px;
+  }
+  
+  .this-time-button {
+    align-items: flex-start;
+    background-color: var(--midnight-blue);
+    border-radius: 4px;
+    display: flex;
+    gap: 10px;
+    height: 30px;
+    left: 401px;
+    overflow: hidden;
+    padding: 4px 11px;
+    top: 253px;
+    width: 126px;
+  }
+  
+  .cette-semaine {
+    align-self: stretch;
+    flex: 1;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    text-align: center;
+  }
+  
+
+  
+  .absence {
+    display: flex;
+    gap: 6px;
+    width: 79px;
+  }
+  
+  .rond-rose {
+    background-color: var(--illusion);
+    border-radius: 9px;
+    height: 18px;
+    width: 18px;
+  }
+  
+  .absence-1 {
+    height: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    width: 53px;
+  }
+  
+  .schedule {
+    display: flex;
+    gap: 6px;
+    width: 103px;
+  }
+  
+  .rond-vert {
+    background-color: var(--aquamarine);
+    border-radius: 9px;
+    height: 18px;
+    width: 18px;
+  }
+  
+  .rdv-mdical {
+    height: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    width: 77px;
+  }
+  
+  .btn_crer {
+    align-items: flex-start;
+    background-color: var(--midnight-blue);
+    border-radius: 4px;
+    display: flex;
+    gap: 10px;
+    height: 40px;
+    left: 290px;
+    overflow: hidden;
+    padding: 8px 26px;
+    top: 142px;
+    width: 170px;
+  }
+  
+  .ajouter-un-rdv {
+    align-self: stretch;
+    color: var(--white);
+    flex: 1;
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-xl2);
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    text-align: center;
+  }
+  
+  .search-tool-psy {
+    display: none;
+    /*border: 1px solid;
+    border-color: var(--cadet-blue);
+    border-radius: 4px;
+    display: flex;
+    gap: 122px;
+    left: 425px;
+    overflow: hidden;
+    padding: 9px 11px;
+    top: 50px;
+    width: 522px;
+    position:absolute;*/
+  }
+ 
+  
+  .rechercher-un-patient-ou-une-date {
+    display: none;
+    /*background-color: transparent;
+    border: 0;
+    flex: 1;
+    height: 21px;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    min-width: 359px;
+    padding: 0;
+    position: relative;
+  */}
+  
+  .loupe {
+    display: none;
+    /*height: 21px;
+    margin-bottom: -1.00px;
+    min-width: 21px;
+    position: relative;
+  */}
+   
+
+  .current-week {
+    left: 224px;
+    letter-spacing: 0;
+    line-height: normal;
+    top: 252px;
+    width: 197px;
+  }
+
+  .fullCalendar {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .calendarForDesign { 
+    height: 500; 
+    border-radius: '10px';
+    overflow: 'hidden';
+    border: '1px solid #9D9D9D';
+    background-color: #FFFFFF;
+  }
+
+  .calendar {
+    background-color: #FFFFFF;
+  }
+
+  .fc .fc-toolbar.fc-header-toolbar {
+    margin-bottom: 30px !important;
+  }
+
+  .rbc-toolbar {
+    display: none;
+}
+
+.fc .fc-timegrid-axis-cushion {
+  color: transparent;
+}
+
+
+
+.firstLine {
+    display: flex;
+    padding-top: 50px;
+    gap: 27px;
+}
+
+.secondLine {
+    display: flex;
+    margin-top: 70px;
+    gap: 8px;
+}
+
+
+.legende {
+  position: absolute;
+  top: 154px; /* Ajustez ces valeurs pour positionner votre HTML personnalisé */
+  left:78%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: flex;
+  gap: 10px;
+  height: 18px;
+  width: 190px;
+  }
+
+
+.bottomOfTheCalendar {
+  margin-top: 50px;
+  width: 90%;
+  margin-left: 70px;
+  }
+
+
+.btn_crer {
+  cursor: pointer;
+  display: flex;
+}
+
+.print-pop-up {
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 11px 11px;
+  width: 560px;
+  position: fixed; /* Change from absolute to fixed */
+  z-index: 10;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Correct the offset caused by top and left */
+  z-index: 1001;
+  padding-bottom: 60px;
+  transition: height 0.3s ease-in-out; /* animation de la hauteur */
+}
+
+.print-pop-up.initial {
+  height: 683px;
+}
+
+.print-pop-up.extended {
+  height: 800px;
+}
+
+.pop-up {
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 628px;
+  overflow: hidden;
+  padding: 11px 11px;
+  width: 560px;
+  position: fixed; /* Change from absolute to fixed */
+  z-index: 10;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Correct the offset caused by top and left */
+  z-index: 1001;
+}
+
+.overlay {
+  background-color: rgba(102, 102, 102, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+
+.close-pop-up {
+  align-self: flex-end;
+  height: 26px;
+  width: 24px;
+  cursor:pointer;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+.titlePrintPopup {
+  color: var(--black);
+  font-family: var(--font-family-poppins);
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: 12px;
+  min-height: 38px;
+  text-align: center;
+  width: 404px;
+  margin-bottom: 50px;
+}
+
+.title-rdv {
+  color: var(--black);
+  font-family: var(--font-family-poppins);
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: 12px;
+  min-height: 38px;
+  text-align: center;
+  width: 404px;
+}
+
+.date-rdv {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 4.15px;
+  margin-top: 36px;
+  min-width: 408px;
+}
+
+.dateRdv {
+  width: 404px;
+  height: 56px;
+  border-radius: 5px;
+  border: 1px solid #B0B0B0;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: 'poppins';
+  font-size: 16px;
+  position: relative;
+}
+
+.dateRdv:focus {
+  border: 2px solid #153D7C;
+}
+
+.dateRdv.selected {
+  border: 2px solid #153D7C;
+}
+
+#patient-select {
+  position: absolute;
+  z-index: 0;
+}
+
+
+.overlap-group-1 {
+  align-items: center;
+  background-color: var(--white);
+  border: 1px solid;
+  border-color: var(--nobel);
+  border-radius: 8px;
+  display: flex;
+  gap: 257px;
+  height: 56px;
+  justify-content: flex-end;
+  min-width: 404px;
+  padding: 8px 14px;
+}
+
+.inputDateContainer {
+  padding: auto;
+}
+
+.date-container {
+  align-items: flex-start;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  min-height: 39px;
+  width: 90px;
+}
+
+.date-du-rdv {
+  letter-spacing: 0;
+  line-height: normal;
+  min-height: 21px;
+  width: 90px;
+}
+
+.date {
+  letter-spacing: 0;
+  line-height: normal;
+  min-height: 18px;
+  width: 70px;
+}
+
+.calendarLine {
+  display: flex;
+  flex-direction: column;
+  margin-top: -17px;
+}
+
+.labelDate {
+  margin-left: 3px;
+  margin-bottom: 3px;
+}
+
+.calendarIconPrint {
+  position: absolute;
+  left: 435px;
+  cursor: pointer;
+}
+
+.calendarIcon {
+  position: absolute;
+  left: 435px;
+  top: 164px;
+  cursor: pointer;
+}
+
+.akar-iconscalendar {
+  height: 24px;
+  margin-bottom: 2px;
+  width: 24px;
+}
+
+.hourRdv {
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  height: 56px;
+  width: 180px;
+  margin-right: 0px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 3px;
+  font-family: 'poppins';
+  font-size: 16px;
+  transition: border 0.1s ease-in-out;
+}
+
+.hourRdv:hover {
+  border: 2px solid var(--midnight-blue)
+  
+}
+
+.fc {
+  font-family: 'poppins' !important;
+  max-height: 100vh !important;
+  height: 90vh !important;
+}
+
+.fc .fc-day-today {
+  background-color: #e5f1ff !important;
+}
+
+.fc-today-button.fc-button.fc-button-primary:disabled {
+  background-color: #f6f4f4;
+  border: 1px solid #999999 ;
+  color: #666666;
+}
+
+.hourRdv:focus {
+  border: 2px solid var(--midnight-blue)
+}
+
+.hourRdv.selected {
+  border: 2px solid var(--midnight-blue)
+}
+
+.hourRdv2 {
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  height: 56px;
+  width: 180px;
+  margin-right: 0px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 3px;
+  font-family: 'poppins';
+  font-size: 16px;
+  transition: border 0.1s ease-in-out;
+}
+
+.hourRdv2:focus {
+  border: 2px solid var(--midnight-blue)
+}
+
+.hourRdv2:hover {
+  border: 2px solid var(--midnight-blue)
+}
+
+.hourRdv2.selected {
+  border: 2px solid var(--midnight-blue)
+}
+
+#hourRdv1 {
+  margin-left: 65px;
+}
+
+.labelBeginHour {
+  margin-left: 68px;
+  padding-bottom: 5px;
+}
+
+.labelEndHour {
+  margin-left: 3px;
+  margin-bottom: 5px;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.clockIcon {
+  position: absolute;
+  left: 210px;
+  top: 258px;
+  width:24px;
+  height: 24px;
+}
+
+.clockIcon2 {
+  position: absolute;
+  left: 428px;
+  top: 258px;
+  width:24px;
+  height: 24px;
+}
+
+.css-1kvln7l-MuiButtonBase-root-MuiMenuItem-root-MuiDigitalClock-item:hover {
+  background-color: #153D7C !important;
+  opacity: 0.8;
+  color:#FFFFFF;
+}
+
+.css-ecl09s-MuiDigitalClock-root {
+width: 180px !important;
+border: 1px solid #d9d9d9;
+border-radius: 5px;
+}
+
+
+.css-1rh9t0w-MuiStack-root {
+  padding-top: 0px !important;
+}
+
+.css-1kvln7l-MuiButtonBase-root-MuiMenuItem-root-MuiDigitalClock-item.Mui-selected {
+  background-color: #153D7C !important;
+  color: #FFFFFF ;
+  width: 180px;
+}
+
+.css-1u9des2-indicatorSeparator {
+  display: none;
+}
+
+.setTime {
+  position: absolute;
+  z-index: 2;
+  background-color: white;
+  left: 78px;
+}
+
+.setTime2 {
+  position: absolute;
+  z-index: 2;
+  background-color: white;
+}
+
+
+.labelSearchPatient{
+  margin-left: 3px;
+}
+
+.locationLabel {
+  margin-left: 3px;
+}
+
+.location-dropdown {
+  margin-top: -15px;
+}
+
+.overlap-group-container {
+  align-items: flex-start;
+  display: flex;
+  gap: 14px;
+  height: 56px;
+  margin-left: 4px;
+  margin-top: 17px;
+  min-width: 408px;
+  margin-bottom: 50px;
+}
+
+.overlap-group2 {
+  align-items: flex-start;
+  background-color: var(--white);
+  border: 1px solid;
+  border-color: var(--nobel);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  min-height: 56px;
+  padding: 8px 10.7px;
+  width: 195px;
+}
+
+.horaire,
+.lieu {
+  letter-spacing: 0;
+  line-height: normal;
+  min-height: 21px;
+  width: 114px;
+}
+
+.x17h,
+.chambre {
+  letter-spacing: 0;
+  line-height: normal;
+  min-height: 18px;
+  width: 109px;
+}
+
+.patient-user {
+  align-items: flex-start;
+  display: flex;
+  height: 56px;
+  margin-left: 4px;
+  margin-top: 19px;
+  min-width: 408px;
+}
+
+.overlap-group10 {
+  align-items: flex-start;
+  background-color: var(--white);
+  border: 1px solid;
+  border-color: var(--nobel);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  min-height: 56px;
+  padding: 8px;
+  width: 404px;
+}
+
+.patient {
+  letter-spacing: 0;
+  line-height: normal;
+  min-height: 21px;
+  width: 300px;
+}
+
+.jacques-chevreuil {
+  letter-spacing: 0;
+  line-height: normal;
+  min-height: 18px;
+  width: 139px;
+}
+
+.btn-valider-print {
+  align-items: center;
+  background-color: var(--midnight-blue);
+  border-radius: 10px;
+  display: flex;
+  height: 62px;
+  justify-content: center;
+  margin-left: 1px;
+  margin-top: 55px;
+  overflow: hidden;
+  width: 319px;
+  cursor: pointer;
+}
+
+.btn-valider-rdv {
+  align-items: center;
+  background-color: var(--midnight-blue);
+  border-radius: 10px;
+  display: flex;
+  height: 62px;
+  justify-content: center;
+  margin-left: 1px;
+  margin-top: 55px;
+  overflow: hidden;
+  width: 319px;
+  cursor: pointer;
+}
+
+.btn-valider-rdv:disabled {
+  opacity:0.5;
+}
+
+.validate {
+  height: 62px;
+  letter-spacing: 0;
+  line-height: 19.5px;
+  margin-top: 0;
+  text-align: center;
+  vertical-align: middle;
+  width: 127.15px;
+  color: #FFFFFF;
+  position: absolute;
+  font-weight: 500;
+  font-family: 'poppins';
+  padding-top: 21px;
+}
+
+.popup-open {
+  border: none;
+}
+
+.printButtonContainer {
+  display: inline;
+  height: 50px;
+}
+
+.printBtn {
+  border: none;
+  position: absolute;
+  background-color: transparent;
+  cursor: pointer;
+  width: 54px;
+  height: 40px;
+  left: 90%;
+  top: 50px;
+}
+
+@media screen and (min-width: 1500px) {
+.fc.fc-media-screen {
+  max-height: 680px !important;
+}
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1500px) {
+  .legende {
+    position: absolute;
+    top: 154px; /* Ajustez ces valeurs pour positionner votre HTML personnalisé */
+    left:75%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+
+  .fc.fc-media-screen {
+    max-height: 680px !important;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1300px) {
+  .legende {
+    position: absolute;
+    top: 154px; /* Ajustez ces valeurs pour positionner votre HTML personnalisé */
+    left:73%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  .fc.fc-media-screen {
+    max-height: 660px !important;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .legende {
+    position: absolute;
+    top: 154px; /* Ajustez ces valeurs pour positionner votre HTML personnalisé */
+    left:69%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+
+  .fc.fc-media-screen {
+    max-height: 640px !important;
+  }
+
+}
+
