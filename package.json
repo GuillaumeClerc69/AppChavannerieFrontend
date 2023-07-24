@@ -48,7 +48,7 @@
     "webpack": "^5.87.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node_modules/react-scripts/bin/react-scripts.js start",
     "build": "react-scripts build",
     "test": "react-scripts test --passWithNoTests",
     "eject": "react-scripts eject"
