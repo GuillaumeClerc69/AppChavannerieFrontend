@@ -40,6 +40,7 @@ function PsychiatreCalendar() {
   // eslint-disable-next-line no-unused-vars
   const [addEvent, setAddEvent] = useState(null);
   const [selectedDate, setSelectedDate] = useState(dayjs().add(1, 'day').format('YYYY-MM-DD'));
+  const [selectedDatePrint, setSelectedDatePrint] = useState(dayjs().add(1, 'day').format('YYYY-MM-DD'));
   const [events, setEvents] = useState([]);
   const [isPrintPopupOpen, setIsPrintPopupOpen] = useState(false)
   const [isOpen, setIsOpen] = useState(false);
@@ -146,10 +147,16 @@ function PsychiatreCalendar() {
     doc.setFontSize(20);
     doc.text(`La Chavannerie`, 20, 60);
     doc.text(`${doctorName}`, 20, 70);
-    doc.text(`${moment(selectedDate).locale('fr').format('dddd')} ${moment(selectedDate).locale('fr').format('LL')}`, 20, 80);
+    doc.text(`${moment(selectedDatePrint).locale('fr').format('dddd')} ${moment(selectedDatePrint).locale('fr').format('LL')}`, 20, 80);
 
-  
-    const appointments = events.map(event => {
+    const filteredAppointments = events.filter(event => {
+    // Comparez les dates sans prendre en compte les heures
+    const eventDate = moment(event.start).startOf('day');
+    const selectedDate = moment(selectedDatePrint).startOf('day');
+    return eventDate.isSame(selectedDate);
+  });
+
+     const appointments = filteredAppointments.map(event => {
       const startTime = dayjs(event.start).format('HH:mm'); // Formattez la date de début pour obtenir uniquement l'heure
       const [firstname, lastname] = event.title.split(' '); // Divisez le titre en prénom et nom de famille
       const patientName = `${firstname}.${lastname.charAt(0)}`; // Formatez le nom du patient
@@ -491,7 +498,7 @@ const handleEndHourSelect = (value) => {
                 <div className={`print-pop-up`} style={{ height: popupHeight }} onClick={(e) => e.stopPropagation()}>
                   <img className="close-pop-up" src={closePopup} alt="closePopUp" onClick={() => setIsPrintPopupOpen(false)} />
                   <h1 className="titlePrintPopup">Impression fiche quotidienne</h1>
-                 { <ComponentDatePrintPopup selectedDate={selectedDate} setSelectedDate={setSelectedDate} isOpen={isOpen} setIsOpen={setIsOpen}/>}
+                 { <ComponentDatePrintPopup selectedDatePrint={selectedDatePrint} setSelectedDatePrint={setSelectedDatePrint} isOpen={isOpen} setIsOpen={setIsOpen}/>}
                  
                   <button className="btn-valider-print" style={buttonStyle} onClick={handlePrintButtonClick}>
                     <div className="validate valign-text-middlepoppins-bold-white-13px">

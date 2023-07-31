@@ -7,7 +7,7 @@ import { fr } from 'date-fns/locale';
 import './selectDate.css';
 import CalendarIcon from './akar-icons_calendar.svg'
 
-export default function ComponentDate({ selectedDate, setSelectedDate, isOpen, setIsOpen, }) {
+export default function ComponentDate({ selectedDatePrint, setSelectedDatePrint, isOpen, setIsOpen, }) {
   const tomorrow = new Date();
   tomorrow.setDate(tomorrow.getDate() + 1);
 
@@ -29,7 +29,7 @@ export default function ComponentDate({ selectedDate, setSelectedDate, isOpen, s
     if(date) {
       const newDate = new Date(date);
       setSelected(newDate); // Utilisation de new Date() pour assurer la conversion en objet Date
-      setSelectedDate(newDate); // Mettre à jour l'état dans le composant parent
+      setSelectedDatePrint(newDate); // Mettre à jour l'état dans le composant parent
     }
     setIsOpen(false);
   };
