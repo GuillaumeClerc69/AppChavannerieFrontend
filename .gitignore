@@ -8,8 +8,15 @@
 # testing
 /coverage
 
+
+#package
+.package.json
+
 # production
 /build
+
+#github
+/.github
 
 # misc
 .DS_Store
